@@ -1,11 +1,17 @@
 import type { Metadata } from "next";
-import { Prompt } from "next/font/google";
+import { Prompt, Tinos } from "next/font/google";
 import "./globals.css";
 
 const prompt = Prompt({
   subsets: ['latin'],
   preload: true,
   weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900']
+});
+
+const tinos = Tinos({
+  subsets: ['latin'],
+  preload: true,
+  weight: ['400', '700']
 });
 
 export const metadata: Metadata = {
@@ -21,7 +27,7 @@ export default function RootLayout({
   return (
     <html lang="th">
       <body
-        className={`${prompt.className} antialiased`}
+        className={`${tinos.className} antialiased`}
       >
         {children}
       </body>
