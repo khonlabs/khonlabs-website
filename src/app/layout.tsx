@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import { Prompt, Tinos } from "next/font/google";
+import { Tinos, Noto_Serif_Thai } from "next/font/google";
 import "./globals.css";
 
-const prompt = Prompt({
+const notoSerifThai = Noto_Serif_Thai({
   subsets: ['latin'],
   preload: true,
   weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900']
@@ -27,7 +27,7 @@ export default function RootLayout({
   return (
     <html lang="th">
       <body
-        className={`${tinos.className} antialiased`}
+        className={`${notoSerifThai.className} antialiased`}
       >
         {children}
       </body>
