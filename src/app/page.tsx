@@ -11,7 +11,7 @@ export default function Home() {
 
         <div>
           <div className="flex flex-col text-xl lg:text-4xl">
-            <Link href="https://witx.app" className="font-bold lg:font-normal hover:underline">WIT X</Link>
+            <Link href="https://witx.in.th" className="font-bold lg:font-normal hover:underline">WIT X</Link>
             <Link href="https://zobyeteam.com" className="font-bold lg:font-normal hover:underline">ZOBYETEAM</Link>
             <Link href="https://knwbadminton.khonlabs.com" className="font-bold lg:font-normal hover:underline">KNW Badminton Booking</Link>
           </div>

@@ -1,18 +1,13 @@
 import type { Metadata } from "next";
-import { Tinos, Noto_Serif_Thai } from "next/font/google";
+import { Trirong } from "next/font/google";
 import "./globals.css";
 
-const notoSerifThai = Noto_Serif_Thai({
+const trirong = Trirong({
   subsets: ['latin'],
   preload: true,
   weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900']
 });
 
-const tinos = Tinos({
-  subsets: ['latin'],
-  preload: true,
-  weight: ['400', '700']
-});
 
 export const metadata: Metadata = {
   title: "KHON LABS",
@@ -27,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="th">
       <body
-        className={`${notoSerifThai.className} antialiased`}
+        className={`${trirong.className} antialiased`}
       >
         {children}
       </body>
